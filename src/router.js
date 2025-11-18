@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
+// 1. IMPORTA createWebHashHistory (Fíjate que dice Hash)
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Home from './pages/Home.vue'
 import SafariPlaya from './pages/SafariPlaya.vue'
@@ -15,8 +16,8 @@ const routes = [
 ]
 
 const router = createRouter({
-  // AQUÍ ESTÁ LA SOLUCIÓN MÁGICA:
-  history: createWebHistory(import.meta.env.BASE_URL),
+  // 2. USA EL MODO HASH AQUÍ
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior() { return { top: 0 } }
 })
