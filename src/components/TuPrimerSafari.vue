@@ -38,7 +38,7 @@
           <div 
             class="w-full h-full safari-shape shadow-2xl"
             style="
-              background-image: url('/jeep.jpg'); 
+              background-image: url('jeep.jpg'); 
               background-size: cover;
               background-position: center;
               background-color: #4b5563;
